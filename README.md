@@ -3,7 +3,7 @@
 ## 项目开发介绍
 
 ### 目录结构
-
+```
 ├── config # umi 配置，包含路由，构建等配置
 ├── public # 全局文件
 │ └── favicon.png # Favicon
@@ -17,6 +17,7 @@
 │ ├── utils # 工具库
 ├── README.md
 └── package.json
+```
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
