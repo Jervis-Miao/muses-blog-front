@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import beian from '../../assets/pics/beian.png';
-import './BottomNav.less';
+import './FooterNav.less';
 
-export default class BottomNav extends Component {
+export default class FooterNav extends Component {
 
   render() {
     return (
