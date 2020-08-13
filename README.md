@@ -1,3 +1,23 @@
+# Muses-Space-Front
+
+## 项目开发介绍
+
+### 目录结构
+
+├── config # umi 配置，包含路由，构建等配置
+├── public # 全局文件
+│ └── favicon.png # Favicon
+├── src
+│ ├── assets # 本地静态资源
+│ ├── common # 应用公共配置 如导航信息
+│ ├── components # 业务通用组件
+│ ├── layouts # 通用布局
+│ ├── routes # 业务页面入口
+│ ├── services # 后台接口服务
+│ ├── utils # 工具库
+├── README.md
+└── package.json
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
