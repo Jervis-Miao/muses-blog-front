@@ -8,6 +8,10 @@ export default class HeadNav extends Component {
     current: 'home',
   }
 
+  onSelectHandle = (item) => {
+    this.setState({ current: item.key })
+  }
+
   render() {
     return (
       <div id="HeadNav">
@@ -16,10 +20,7 @@ export default class HeadNav extends Component {
             <GlobalOutlined className="nav-logo"/>
           </div>
           <div className="nav-list-wrap">
-            <Menu
-              selectedKeys={[this.state.current]}
-              mode="horizontal"
-            >
+            <Menu selectedKeys={[this.state.current]} mode="horizontal" onSelect={this.onSelectHandle}>
               <Menu.Item key="home">
                 首页
               </Menu.Item>
