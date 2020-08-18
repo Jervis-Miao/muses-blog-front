@@ -1,18 +1,19 @@
 import React, { Component } from 'react';
-import { HashRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import DefaultLayout from './layouts/DefaultLayout/DefaultLayout';
 import LoginLayout from './layouts/LoginLayout/LoginLayout';
 
-export default class RouterWrap extends Component {
+export default class Router extends Component {
   render() {
     return (
       <div id="router">
-        <HashRouter>
+        <BrowserRouter>
           <Switch>
             <Route path="/" component={DefaultLayout} exact/>
             <Route path="/login" component={LoginLayout}/>
+            <Route path="/home" component={DefaultLayout}/>
           </Switch>
-        </HashRouter>
+        </BrowserRouter>
       </div>
     )
   }

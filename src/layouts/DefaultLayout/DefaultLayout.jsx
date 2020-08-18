@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
-import { Breadcrumb, Card, Layout } from 'antd';
+import { Card, Layout } from 'antd';
+import { Route } from 'react-router-dom';
 import './DefaultLayout.less';
 import HeadNav from '../../common/Head/HeadNav';
 import FooterNav from '../../common/Footer/FooterNav';
+import Home from '../../routes/Home/Home';
+import About from '../../routes/About/About';
+import Article from '../../routes/Article/Article';
+import Resource from '../../routes/Resource/Resource';
 
-const { Header, Footer, Content, Sider } = Layout;
+const { Header, Sider, Content, Footer, } = Layout;
 
 export default class DefaultLayout extends Component {
   render() {
@@ -13,44 +18,23 @@ export default class DefaultLayout extends Component {
         <Header>
           <HeadNav/>
         </Header>
-        <Layout style={{ padding: '0 200px 500px' }}>
+        <Layout style={{ padding: '0 200px' }}>
           <Sider className="sider">
             <Card bordered={false} title="我是侧边栏1" className="sider-card">
-              侧边栏1<br/>
-              侧边栏1<br/>
-              侧边栏1<br/>
-              侧边栏1<br/>
-              侧边栏1<br/>
-              侧边栏1
+              我是侧边栏1<br/>
+              我是侧边栏1
             </Card>
           </Sider>
-          <Layout style={{ padding: '0 24px 24px' }}>
-            <Content>
-              <Breadcrumb style={{ margin: '16px 0', textAlign: "left" }}>
-                <Breadcrumb.Item>Home</Breadcrumb.Item>
-                <Breadcrumb.Item>List</Breadcrumb.Item>
-                <Breadcrumb.Item>App</Breadcrumb.Item>
-              </Breadcrumb>
-              <Card className="content-card">
-                HelloWorld!<br/>
-                HelloWorld!<br/>
-                HelloWorld!<br/>
-                HelloWorld!<br/>
-                HelloWorld!<br/>
-                HelloWorld!<br/>
-                HelloWorld!<br/>
-                HelloWorld!
-              </Card>
-            </Content>
-          </Layout>
+          <Content>
+            <Route path={this.props.match.url + '/'} component={Home} exact/>
+            <Route path={this.props.match.url + '/about'} component={About}/>
+            <Route path={this.props.match.url + '/article'} component={Article}/>
+            <Route path={this.props.match.url + '/resource'} component={Resource}/>
+          </Content>
           <Sider className="sider">
             <Card bordered={false} title="我是侧边栏2" className="sider-card">
-              侧边栏2<br/>
-              侧边栏2<br/>
-              侧边栏2<br/>
-              侧边栏2<br/>
-              侧边栏2<br/>
-              侧边栏2
+              我是侧边栏2<br/>
+              我是侧边栏2
             </Card>
           </Sider>
         </Layout>

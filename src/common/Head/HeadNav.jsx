@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Menu } from 'antd';
 import { GlobalOutlined } from '@ant-design/icons';
 import './HeadNav.less';
+import { Link } from 'react-router-dom';
 
 export default class HeadNav extends Component {
   state = {
@@ -22,16 +23,16 @@ export default class HeadNav extends Component {
           <div className="nav-list-wrap">
             <Menu selectedKeys={[this.state.current]} mode="horizontal" onSelect={this.onSelectHandle}>
               <Menu.Item key="home">
-                首页
+                <Link to="/home" className="link">首页</Link>
               </Menu.Item>
               <Menu.Item key="aboutme">
-                关于我
+                <Link to="/home/about" className="link">关于我</Link>
               </Menu.Item>
               <Menu.Item key="article">
-                文章分享
+                <Link to="/home/article" className="link">文章分享</Link>
               </Menu.Item>
               <Menu.Item key="resource">
-                资源共享
+                <Link to="/home/resource" className="link">资源共享</Link>
               </Menu.Item>
             </Menu>
           </div>
