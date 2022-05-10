@@ -34,6 +34,11 @@ export default class HeadNav extends Component {
               <Menu.Item key="resource">
                 <Link to="/home/resource" className="link">资源共享</Link>
               </Menu.Item>
+              <Menu.SubMenu key="more" title="更多">
+                <Menu.Item key="two">
+                  <Link to="/panel/" className="link">PANEL控制台</Link>
+                </Menu.Item>
+              </Menu.SubMenu>
             </Menu>
           </div>
         </div>
