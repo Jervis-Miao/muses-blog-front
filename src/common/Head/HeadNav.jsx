@@ -39,7 +39,7 @@ export default class HeadNav extends Component {
                   <Link to="/panel/" className="link" target="_blank">PANEL控制台</Link>
                 </Menu.Item>
                 <Menu.Item key="proxy">
-                  <Link to="/proxy/" className="link" target="_blank">LAN-PROXY透传</Link>
+                  <Link to="/proxy/" target="_blank">LAN-PROXY透传</Link>
                 </Menu.Item>
               </Menu.SubMenu>
             </Menu>
