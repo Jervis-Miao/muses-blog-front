@@ -41,6 +41,9 @@ export default class HeadNav extends Component {
                 <Menu.Item key="proxy">
                   <Link to="/proxy/" target="_blank">LAN-PROXY透传</Link>
                 </Menu.Item>
+                <Menu.Item key="chatgpt">
+                  <Link to="/chatgpt/" target="_blank">CHAT</Link>
+                </Menu.Item>
               </Menu.SubMenu>
             </Menu>
           </div>
