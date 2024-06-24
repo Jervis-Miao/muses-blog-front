@@ -35,14 +35,14 @@ export default class HeadNav extends Component {
                 <Link to="/home/resource" className="link">资源共享</Link>
               </Menu.Item>
               <Menu.SubMenu key="more" title="更多">
-                <Menu.Item key="panel">
-                  <Link to="/panel/" className="link" target="_blank">PANEL控制台</Link>
+                <Menu.Item key="chatgpt">
+                  <Link to="/chatgpt/" target="_blank">MUSES-chatGPT</Link>
                 </Menu.Item>
                 <Menu.Item key="proxy">
                   <Link to="/proxy/" target="_blank">LAN-PROXY透传</Link>
                 </Menu.Item>
-                <Menu.Item key="chatgpt">
-                  <Link to="/chatgpt/" target="_blank">CHAT</Link>
+                <Menu.Item key="panel">
+                  <Link to="/panel/" className="link" target="_blank">PANEL控制台</Link>
                 </Menu.Item>
               </Menu.SubMenu>
             </Menu>
