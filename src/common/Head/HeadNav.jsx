@@ -35,6 +35,9 @@ export default class HeadNav extends Component {
                 <Link to="/home/resource" className="link">资源共享</Link>
               </Menu.Item>
               <Menu.SubMenu key="more" title="更多">
+                <Menu.Item key="doc">
+                  <Link to="/doc/" target="_blank">DOC</Link>
+                </Menu.Item>
                 <Menu.Item key="chatgpt">
                   <Link to="/chatgpt/" target="_blank">MUSES-chatGPT</Link>
                 </Menu.Item>
